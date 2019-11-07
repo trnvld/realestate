@@ -1,0 +1,26 @@
+{
+  "name": "realestate",
+  "version": "1.0.0",
+  "description": "realestate",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trnvld/realestate.git"
+  },
+  "author": "v.terniuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trnvld/realestate/issues"
+  },
+  "homepage": "https://github.com/trnvld/realestate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.13.0"
+  }
+}
