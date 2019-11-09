@@ -1,0 +1,46 @@
+.geography {
+	padding: 115px 0;
+	.container {
+
+	}
+	&__header {
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 49px;
+		color: #333333;
+		margin-bottom: 110px;
+	}
+	&__projects {
+		display: flex;
+		margin-bottom: 115px;
+		&-item {
+			display: flex;
+			flex-direction: column;
+			margin-right: 25%;
+			&-header {
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 25px;
+				color: #333333;
+			}
+			&-number {
+				font-weight: 800;
+				font-size: 72px;
+				line-height: 98px;
+				color: #333333;
+			}
+			span {
+				font-weight: 300;
+				font-size: 18px;
+				line-height: 25px;
+				color: #333333;
+			}
+		}
+	}
+	&__text {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 25px;
+		color: #333333;
+	}
+}

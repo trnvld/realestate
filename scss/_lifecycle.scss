@@ -1,0 +1,112 @@
+.lifecycle {
+	padding: 100px 0;
+	.container {
+
+	}
+	&__header {
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 49px;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 45px;
+	}
+	&__subheader {
+		display: block;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 33px;
+		text-align: center;
+		color: #000000;
+	}
+	&__info {
+		display: flex;
+		&-list {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			li {
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 25px;
+				color: #000000;
+				height: 45px;
+				display: flex;
+				align-items: center;
+				min-width: 170px;
+			}
+			&:first-of-type {
+				li {
+					text-align: right;
+					padding-right: 10px;
+					border-right: 1px solid #000000;
+					justify-content: flex-end;
+					&:nth-child(1) {
+						margin-top: 100px;
+					}
+					&:nth-child(3) {
+						margin-bottom: 100px;
+					}
+				}
+			}
+			&:nth-of-type(2) {
+				li {
+					text-align: left;
+					padding-left: 10px;
+					border-left: 1px solid #000000;
+					justify-content: flex-start;
+					&:nth-child(1) {
+						margin-top: 100px;
+					}
+					&:nth-child(3) {
+						margin-bottom: 100px;
+					}
+				}
+			}
+		}
+	}
+	&__sphere {
+			position: relative;
+		&-img {
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, 0);
+			z-index: -1;
+		}
+		&-overlay {
+			// width: 337px;
+			// height: 337px;
+			width: 43%;
+			height: 57%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			z-index: 1;
+			opacity: 0.15;
+		}
+	}
+	&__text {
+		text-align: center;
+		position: relative;
+		.first-div {
+			overflow: hidden;
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 75%;
+				width: 100%;
+			background: -webkit-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255, 1));
+			background: -o-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255, 1));
+			background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255, 1));
+			}
+		}
+		
+		p {
+			margin-bottom: 20px;
+		}
+	}
+}
