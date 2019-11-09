@@ -1,0 +1,38 @@
+.about-us {
+	background-color: #F2F2F2;
+	padding: 100px 0;
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info {
+		flex: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-right: 100px;
+	}
+	&__header {
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 49px;
+		color: #333333;
+		margin-bottom: 30px;
+	}
+	&__text {
+		margin-bottom: 30px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 25px;
+		color: #333333;
+		p {
+			margin-bottom: 30px;
+		}
+	}
+	&__picture {
+		flex: 50%;
+		img {
+			width: 100%;
+		}
+	}
+}

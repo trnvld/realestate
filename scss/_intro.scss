@@ -1,0 +1,43 @@
+.intro {
+	padding: 55px 0;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		padding-bottom: 75px;
+	}
+	&__info {
+		flex: 40%;
+		margin-right: 100px;
+		margin-bottom: 60px;
+		&-header {
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 49px;
+			text-transform: capitalize;
+			margin-bottom: 35px;
+			span {
+				font-weight: normal;
+			}
+		}
+		&-text {
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 25px;
+			margin-bottom: 35px;
+		}
+	}
+	&__picture {
+		flex: 60%;
+		margin-right: -12%;
+		img {
+			box-shadow: 0px 18px 40px rgba(130, 130, 130, 0.25);
+		}
+	}
+	&__decor-text {
+		position: absolute;
+		bottom: 0;
+		z-index: -1;
+	}
+}

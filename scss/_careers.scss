@@ -1,9 +1,11 @@
-.homepage__careers {
+.careers {
 	background-size: cover;
 	padding: 100px 0;
 	position: relative;
 	overflow: hidden;
-
+	background-image: url(../img/bottom-img.jpg);
+	background-size: cover;
+	background-position: center; 
 	video {
 		position: absolute;
 		z-index: -1;
@@ -15,9 +17,8 @@
 		flex-direction: column;
 		align-items: center;
 		z-index: 1;
-
 	}
-	&-heading {
+	&__heading {
 		font-family: $fontFamily;
 		font-weight: normal;
 		font-size: 36px;
@@ -25,7 +26,7 @@
 		color: #FFFFFF;
 		margin-bottom: 39px;
 	}
-	&-content {
+	&__content {
 		font-family: $fontFamily;
 		font-weight: 300;
 		font-size: 18px;

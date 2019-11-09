@@ -1,7 +1,9 @@
 @import 'variables';
 @import 'header';
-@import 'footer';
+@import 'intro';
+@import 'about-us';
 @import 'careers';
+@import 'footer';
 
 html {
 	box-sizing: border-box;
@@ -79,17 +81,17 @@ textarea {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 48px;
-	box-shadow: 0 18px 40px rgba(241, 92, 66, 0.25);
+	box-shadow: 0 18px 40px rgba(63, 211, 173, 0.25);
 	border-radius: 2px;
-	border: 2px solid #F05336;
+	border: 2px solid #3FD3AD;
 	transition: 0.5s;
 }
 
-.btn-orange {
-	background: #F15C42;
+.btn-mint {
+	background: #3FD3AD;
 	color: #ffffff;
 	&:hover {
-		color: #F15C42;
+		color: #3FD3AD;
 		box-shadow: none;
 		background: transparent;
 		transition: 0.5s;
@@ -98,7 +100,7 @@ textarea {
 
 .btn-read-more {
   font-family: $fontFamily;
-  color: #F15C42;
+  color: #3FD3AD;
   font-weight: bold;
   &:hover {
     text-decoration: underline;
@@ -138,7 +140,7 @@ textarea {
 		-ms-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
 		display: inline-block;
-		background: #F15C42;
+		background: #3FD3AD;
 		color: #FFFFFF;
 		padding-left: 8px;
 		font-family: $fontFamily;
