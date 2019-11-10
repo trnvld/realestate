@@ -11,7 +11,7 @@ function menuOffset() {
 function slideDownArrow() {
     $('.about-us__arrow').click(function () {
     $('html,body').animate({
-            scrollTop: $(".potential").offset().top - 100
+            scrollTop: $(".potential").offset().top - 40
         },
         'slow');
     });
@@ -160,13 +160,13 @@ function contactClickRu() {
 };
 
 $(document).ready(function () {
-    // $("#login-modal-link").animatedModal({
-    //     color: 'rgb(6,6,6)',
-    //     modalTarget: 'loginModal',
-    //     animatedIn: 'fadeIn',
-    //     animatedOut: 'fadeOut',
-    //     animationDuration: '1.5s'
-    // });
+    $("#login-modal-link").animatedModal({
+        color: 'rgb(6,6,6)',
+        modalTarget: 'loginModal',
+        animatedIn: 'fadeIn',
+        animatedOut: 'fadeOut',
+        animationDuration: '1.5s'
+    });
     
     if ($("#form-name").length) {
         $("#form-name").attr("name", "name");
@@ -184,13 +184,13 @@ $(document).ready(function () {
         $("#form-btn-contact").attr("type", "button");
     }
 
-    // $(".contact-modal-link").animatedModal({
-    //     color: 'rgb(6,6,6)',
-    //     modalTarget: 'contactModal',
-    //     animatedIn: 'fadeIn',
-    //     animatedOut: 'fadeOut',
-    //     animationDuration: '1.5s'
-    // });
+    $(".contact-modal-link").animatedModal({
+        color: 'rgb(6,6,6)',
+        modalTarget: 'contactModal',
+        animatedIn: 'fadeIn',
+        animatedOut: 'fadeOut',
+        animationDuration: '1.5s'
+    });
 
     menuOffset();
     slideDownArrow();
