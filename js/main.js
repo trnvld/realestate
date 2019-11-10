@@ -50,6 +50,11 @@ function loginClick() {
     }, 1000);
 };
 
+function burger() {
+    $('.hamburger').click(function () {
+        $('.hamburger, .header__burger-menu').toggleClass('is-active')
+    })
+};
 
 function contactClick() {
     var errors = false;
@@ -193,6 +198,7 @@ $(document).ready(function () {
     });
 
     menuOffset();
+    burger();
     slideDownArrow();
     menuItemHighlight();
 });

@@ -77,13 +77,20 @@
 	}
 	&__burger-menu {
 		display: none;
+		&.is-active {
+			right: 0;
+			transition: 0.5s
+		}
 		@media screen and (max-width: 1024px) {
-			position: absolute;
+			position: fixed;
 			width: 300px;
-			left: -300px;
+			right: -300px;
 			top: 0;
+			padding-top: 88px;
 			display: flex;
 			flex-direction: column;
+			transition: 0.5s;
+			z-index: 1;
 		}
 	}
 	&__language {
