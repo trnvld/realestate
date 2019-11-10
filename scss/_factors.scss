@@ -13,6 +13,7 @@
 	}
 	&__info {
 		display: flex;
+		word-break: break-word;
 		&-item {
 			flex: 33%;
 			margin-right: 25px;

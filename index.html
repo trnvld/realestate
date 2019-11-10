@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Blackshield Real Estate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -51,6 +52,9 @@
                             strings: 'hello',
                             speed: 100
                         }).go();
+                        setTimeout(function () {
+                            $('body').removeClass('preloader-on');
+                        }, 2000);
                     });
                 } else {
                     $('.preloader').hide().delay(0);
@@ -65,9 +69,7 @@
                         <p class="intro__info-text">Расширение инвестиционной стратегии и создание дополнительных денежных потоков благодаря фокусу на надежные и перспективные объекты недвижимости</p>
                         <a href="#" class="btn btn-mint">Начнем</a>
                     </div>
-                    <div class="intro__picture">
-                        <img src="img/intro.jpg" alt="intro">
-                    </div>
+                    <img src="img/intro.jpg" alt="intro" class="intro__picture">
                     <img src="img/svg/real-estate.svg" alt="real-estate" class="intro__decor-text">
                 </div>
             </div>

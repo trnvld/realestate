@@ -29,14 +29,12 @@
 				width: 100%;
 				cursor: text;
 				color: gray;
-
 			}
 			&-btn {
-				background: url(../img/arrow-right.svg) center no-repeat !important;
+				background: url(../img/svg/arrow-right.svg) center no-repeat !important;
 				width: 105px;
 				height: 25px;
 				margin-bottom: 7px;
-
 			}
 		}
 	}
@@ -63,29 +61,28 @@
 			align-items: center;
 			transition: 0.3s;
 			box-sizing: content-box;
-		
 			svg {
+				transition: 0.3s;
+				path {
 					transition: 0.3s;
-					path {
-						transition: 0.3s;
-						fill: black;
-					}
+					fill: black;
+				}
 
-				}
-				&:hover {
+			}
+			&:hover {
+				transition: 0.3s;
+				svg {
 					transition: 0.3s;
-					svg {
+					fill: #F15C42;
+					path {
+						fill: white;
+					}
+					circle {
 						transition: 0.3s;
-						fill: #F15C42;
-						path {
-							fill: white;
-						}
-						circle {
-							transition: 0.3s;
-							stroke: #F15C42;
-						}
+						stroke: #F15C42;
 					}
 				}
+			}
 		}
 	}
 	&-menu {
@@ -96,6 +93,11 @@
 		li {
 			list-style-type: none;
 			margin: 0 14px;
+			&:nth-child(4) {
+				a {
+					min-width: 120px;
+				}
+			}
 			&:last-child {
 				margin-right: 0;
 				a {
@@ -114,14 +116,13 @@
 				font-family: $fontFamily;
 				font-weight: 300;
 				text-align: center;
-				min-width: 84px;
+				min-width: 77px;
 				transition: 0.3s;
 				&:hover, &.selected {
 					font-weight: bold;
 					color: #2F3234;
 					transition: 0.3s;
 				}
-
 			}
 		}
 	}
