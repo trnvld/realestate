@@ -15,6 +15,9 @@
 </head>
 
 <body class="preloader-on">
+<script>
+    new WOW().init();
+</script>
     <div class="wrapper">
         <header class="header">
             <div class="header__container container">
@@ -85,18 +88,18 @@
             </script>
             <div class="intro">
                 <div class="container">
-                    <div class="intro__info">
+                    <div class="intro__info wow fadeInLeft" data-wow-duration="2s">
                         <h1 class="intro__info-header">Real Estate<br><span>Investment Trust</span></h1>
                         <p class="intro__info-text">Расширение инвестиционной стратегии и создание дополнительных денежных потоков благодаря фокусу на надежные и перспективные объекты недвижимости</p>
                         <a href="#loginModal" class="btn btn-mint" id="login-modal-link">Начнем</a>
                     </div>
-                    <img src="img/intro.jpg" alt="intro" class="intro__picture">
+                    <img src="img/intro.jpg" alt="intro" class="intro__picture wow fadeInRight" data-wow-duration="2s">
                     <img src="img/svg/real-estate.svg" alt="real-estate" class="intro__decor-text">
                 </div>
             </div>
             <div class="about-us">
                 <div class="container">
-                    <div class="about-us__info">
+                    <div class="about-us__info wow fadeInLeft" data-wow-duration="2s">
                         <h2 class="about-us__header" id="about-us">О нас</h2>
                         <div class="about-us__text">
                             <p>Blackshield Capital Management является управляющей компанией хэдж-фонда Blackshield Exponential Technologies LP.</p>
@@ -108,15 +111,15 @@
                             <img src="img/svg/arrow-down.svg" alt="arrow-down">
                         </a>
                     </div>
-                    <div class="about-us__picture">
+                    <div class="about-us__picture wow fadeInRight" data-wow-duration="2s">
                         <img src="img/about-us.jpg" alt="about-us">
                     </div>
                 </div>
             </div>
             <div class="potential">
                 <div class="container">
-                    <img src="img/potential.jpg" alt="potential" class="potential__picture">
-                    <div class="potential__info">
+                    <img src="img/potential.jpg" alt="potential" class="potential__picture wow fadeInLeft" data-wow-duration="2s">
+                    <div class="potential__info wow fadeInRight" data-wow-duration="2s">
                         <h2 class="potential__header">Потенциальные денежные потоки инвестора</h2>
                         <div class="potential__text">
                             <p>Долгосрочный рентный доход за счет инвестиций в объекты недвижимости</p>
@@ -470,6 +473,31 @@
         </div>
     </div>
     <script src="js/animatedModal.min.js"></script>
+
+
+    <div id="toTop">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="23.5" transform="rotate(-90 24 24)"/>
+            <path d="M24 20.8423L26.7348 25.5791L21.2652 25.5791L24 20.8423Z"/>
+        </svg>
+    </div>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if($(this).scrollTop() > 100) {
+                    $('#toTop').show();
+                } else {
+                    $('#toTop').hide();
+                }
+            });
+
+            $('#toTop').click(function() {
+                $('body,html').animate({scrollTop:0},800);
+            });
+
+
+        });
+    </script>
 </body>
 
 </html>
