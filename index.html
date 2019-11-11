@@ -22,11 +22,11 @@
                     <a href="/"><img src="img/svg/logo.svg" alt="logo"></a>
                 </div>
                 <ul class="header__menu menu">
-                    <li><a href="#" class="selected link1 menu-link">О нас</a></li>
-                    <li><a href="#" class="link2 menu-link">Факторы</a></li>
-                    <li><a href="#" class="link3 menu-link">Этапы</a></li>
-                    <li><a href="#" class="link4 menu-link">Технологии</a></li>
-                    <li><a href="#" class="link5 menu-link">Контакты</a></li>
+                    <li><a href="#about-us" class="selected link1 menu-link">О нас</a></li>
+                    <li><a href="#factors" class="link2 menu-link">Факторы</a></li>
+                    <li><a href="#stage" class="link3 menu-link">Этапы</a></li>
+                    <li><a href="#lifecycle" class="link4 menu-link">Технологии</a></li>
+                    <li><a href="#carrers" class="link5 menu-link">Контакты</a></li>
                 </ul>
                 <ul class="header__language">
                     <li class="lang-en hidden">En</li>
@@ -37,15 +37,15 @@
                     <span class="hamburger-inner"></span>
                   </span>
                 </button>
-                
+
             </div>
         </header>
-        <ul class="header__burger-menu">
-                    <li><a href="#" class="selected link1 menu-link">О нас</a></li>
-                    <li><a href="#" class="link2 menu-link">Факторы</a></li>
-                    <li><a href="#" class="link3 menu-link">Этапы</a></li>
-                    <li><a href="#" class="link4 menu-link">Технологии</a></li>
-                    <li><a href="#" class="link5 menu-link">Контакты</a></li>
+        <ul class="header__burger-menu menu">
+                    <li><a href="#about-us" class="selected link1 menu-link">О нас</a></li>
+                    <li><a href="#factors" class="link2 menu-link">Факторы</a></li>
+                    <li><a href="#stage" class="link3 menu-link">Этапы</a></li>
+                    <li><a href="#lifecycle" class="link4 menu-link">Технологии</a></li>
+                    <li><a href="#carrers" class="link5 menu-link">Контакты</a></li>
                     <li>
                         <ul class="header__language">
                             <li class="lang-en hidden">En</li>
@@ -88,7 +88,7 @@
                     <div class="intro__info">
                         <h1 class="intro__info-header">Real Estate<br><span>Investment Trust</span></h1>
                         <p class="intro__info-text">Расширение инвестиционной стратегии и создание дополнительных денежных потоков благодаря фокусу на надежные и перспективные объекты недвижимости</p>
-                        <a href="#" class="btn btn-mint">Начнем</a>
+                        <a href="#loginModal" class="btn btn-mint" id="login-modal-link">Начнем</a>
                     </div>
                     <img src="img/intro.jpg" alt="intro" class="intro__picture">
                     <img src="img/svg/real-estate.svg" alt="real-estate" class="intro__decor-text">
@@ -97,12 +97,12 @@
             <div class="about-us">
                 <div class="container">
                     <div class="about-us__info">
-                        <h2 class="about-us__header">О нас</h2>
+                        <h2 class="about-us__header" id="about-us">О нас</h2>
                         <div class="about-us__text">
                             <p>Blackshield Capital Management является управляющей компанией хэдж-фонда Blackshield Exponential Technologies LP.</p>
                             <p>Имея богатый опыт управления активами, сегодня мы сконцентрированы на инвестировании в акции инновационных компаний и технологического сектора с потенциалом экспоненциального роста.</p>
                             <p>Мы сочетаем знания, связи и широкий ряд инвестиционных решений с клиент-ориентированным подходом независимого инвестиционного бутика.</p>
-                            <a href="#" class="btn-read-more">Наш официальный сайт >>></a>
+                            <a href="http://blackshield.fund/" class="btn-read-more">Наш официальный сайт >>></a>
                         </div>
                         <a href="#" class="about-us__arrow">
                             <img src="img/svg/arrow-down.svg" alt="arrow-down">
@@ -119,7 +119,7 @@
                     <div class="potential__info">
                         <h2 class="potential__header">Потенциальные денежные потоки инвестора</h2>
                         <div class="potential__text">
-                            <p>Долгосрочный рентный доход за счет инвестиций в объекты недвижимости</p> 
+                            <p>Долгосрочный рентный доход за счет инвестиций в объекты недвижимости</p>
                             <p>Создание добавленной стоимости капитала за счет (ре)девелопмента проектов</p>
                             <p>Приумножение капитала за счет инвестиций в акции фондов REIT и стабильная генерация дивидендного потока</p>
                             <a href="Blackshield Capital_REIT_.pdf" target="_blank" rel="noopener noreferrer" download class="btn-read-more">Скачать презентацию по REIT >>></a>
@@ -127,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <div class="factors">
+            <div class="factors" id="factors">
                 <div class="container">
                     <h2 class="factors__header">Факторы инвестиционной привлекательности</h2>
                     <div class="factors__info">
@@ -198,7 +198,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stage">
+            <div class="stage" id="stage">
                 <div class="container">
                     <h2 class="stage__header">Этапы инвестиционного процесса</h2>
                     <div class="stage__info">
@@ -235,7 +235,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lifecycle">
+            <div class="lifecycle" id="lifecycle">
                 <div class="container">
                     <h2 class="lifecycle__header">Tехнологии AI (artificial intelligence) и Data Science</h2>
                     <span class="lifecycle__subheader">Жизненный цикл data science</span>
@@ -256,7 +256,7 @@
                         </ul>
                     </div>
                     <div class="lifecycle__text">
-                        <div class="first-div"><p>Определение и получение необходимых данных о текущих и прогнозируемых «изломах» рынка недвижимости 
+                        <div class="first-div"><p>Определение и получение необходимых данных о текущих и прогнозируемых «изломах» рынка недвижимости
 (примеры: влияние Brexit, интернет-торговли, урбанизации, миграции, новых технологий, поведения потребителя на разные классы недвижимости)</p>
 
 <p>Структурирование и очистка данных</p>
@@ -265,25 +265,25 @@
 
 <p>Анализ данных по запатентованным алгоритмам, которые с увеличением объема анализа совершенствуют точность оценки и прогнозирования</p>
 
-<p>Использование самообучающихся нейронных сетей (machine learning) для прогнозирования вариантов развития экономических, 
-демографических и психометрических факторов на доходность объектов</p> 
+<p>Использование самообучающихся нейронных сетей (machine learning) для прогнозирования вариантов развития экономических,
+демографических и психометрических факторов на доходность объектов</p>
 
 <p>Поиск наиболее перспективных и недооцененных объектов, на которые эти факторы будут иметь наибольшее влияние</p>
 
-<p>Накопление аналитических данных и мониторинг изменений в режиме 24/7 
+<p>Накопление аналитических данных и мониторинг изменений в режиме 24/7
 для определения наилучшего времени выхода из инвестиции</p>
 </div>
 <a href="#" class="btn-read-more">Читать дальше<span>>>></span></a>
 
 
    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>  
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>  
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>  
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>  
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>  
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>  
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>  
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique necessitatibus iure pariatur aspernatur id asperiores quas qui delectus facere minus consequatur inventore ipsum ipsam possimus quasi, minima, mollitia unde exercitationem.</p>
                     </div>
                 </div>
             </div>
@@ -315,10 +315,10 @@
                 </div>
                 <div class="footer-menus">
                     <ul class="footer-menu menu">
-                        <li><a href="#" class="selected link1 menu-link">O нас</a></li>
-                        <li><a href="#" class="link2 menu-link">Факторы</a></li>
-                        <li><a href="#" class="link3 menu-link">Этапы</a></li>
-                        <li><a href="#" class="link4 menu-link">Технологии</a></li>
+                        <li><a href="#about-us" class="selected link1 menu-link">O нас</a></li>
+                        <li><a href="#factors" class="link2 menu-link">Факторы</a></li>
+                        <li><a href="#stage" class="link3 menu-link">Этапы</a></li>
+                        <li><a href="#lifecycle" class="link4 menu-link">Технологии</a></li>
                         <li><a href="terms-and-conditions.html" class="link6">Terms & conditions</a></li>
                     </ul>
                     <div class="footer-menus-bottom">
@@ -369,7 +369,7 @@
         <div class="close-loginModal close-btn">
             <img class="close-btn-img animated" src="img/svg/close-icon.svg" alt="close">
         </div>
-    
+
         <div class="modal-content">
             <div class="modal-content-center">
                 <span class="modal-login-heading">Login</span>
@@ -425,7 +425,7 @@
         <div class="close-contactModal close-btn">
             <img class="close-btn-img animated" src="img/svg/close-icon.svg" alt="close">
         </div>
-    
+
         <div class="modal-content">
             <div class="modal-content-center">
                 <span class="modal-login-heading">Contact us</span>
@@ -466,12 +466,12 @@
                         </button>
                     </form>
                 </div>
-    
+
                 <div class="form-contact-msg">
                     <img src="img/svg/contact-form-suc.svg" alt="success" />
                     <span class="form-error-msg-text">
                         <b>Thank You!</b>
-                        <br/> 
+                        <br/>
                          We will be in touch with you shortly
                     </span>
                 </div>

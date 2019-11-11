@@ -77,14 +77,16 @@
 	}
 	&__burger-menu {
 		display: none;
-		&.is-active {
+        background-color: #ffffff;
+        padding-bottom: 20px;
+        &.is-active {
 			right: 0;
 			transition: 0.5s
 		}
 		@media screen and (max-width: 1024px) {
 			position: fixed;
-			width: 300px;
-			right: -300px;
+			width: 200px;
+			right: -200px;
 			top: 0;
 			padding-top: 88px;
 			display: flex;
@@ -92,6 +94,32 @@
 			transition: 0.5s;
 			z-index: 1;
 		}
+        li {
+          a {
+            padding: 10px;
+            position: relative;
+            display: block;
+            font-size: 14px;
+            line-height: 19px;
+            color: #2F3234;
+            text-decoration: none;
+            font-family: $fontFamily;
+            font-weight: 300;
+            text-align: center;
+            min-width: 90px;
+            transition: 0.3s;
+            &.selected {
+              font-weight: bold;
+              color: #2F3234;
+              transition: 0.3s;
+            }
+            &:hover {
+              font-weight: bold;
+              color: #2F3234;
+              transition: 0.3s;
+            }
+          }
+        }
 	}
 	&__language {
 		display: flex;
