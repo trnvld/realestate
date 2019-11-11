@@ -30,6 +30,15 @@ function anchorNav() {
     });
 }
 
+function revealText() {
+    $('.reveal').click(function (event) {
+        event.preventDefault();
+        $('.second-content').slideDown('slow');
+        $(this).css('display', 'none');
+        $('.first-content').addClass('revealed');
+    })
+}
+
 function menuItemHighlight() {
     $('.menu-link').click(function () {
         if ($('.menu-link').hasClass('selected')) {
@@ -260,4 +269,5 @@ $(document).ready(function () {
     slideDownArrow();
     menuItemHighlight();
     anchorNav();
+    revealText();
 });
