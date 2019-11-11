@@ -15,9 +15,7 @@
 </head>
 
 <body class="preloader-on">
-<script>
-    new WOW().init();
-</script>
+
     <div class="wrapper">
         <header class="header">
             <div class="header__container container">
@@ -78,12 +76,14 @@
                         }).go();
                         setTimeout(function () {
                             $('body').removeClass('preloader-on');
+                            new WOW().init();
                         }, 2000);
                     });
                 } else {
                     $('.preloader').hide().delay(0);
                     $('.preload-wrap').hide().delay(0);
                     $('body').removeClass('preloader-on');
+                    new WOW().init();
                 }
             </script>
             <div class="intro">
