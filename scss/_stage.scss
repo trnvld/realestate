@@ -18,16 +18,29 @@
 		text-align: center;
 		color: #333333;
 		margin-bottom: 110px;
+		@media screen and (max-width: 768px) {
+			font-size: 28px;
+			line-height: 40px;
+			margin-bottom: 50px;
+		}
 	}
 	&__info {
 		display: flex;
 		justify-content: space-between;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
 		&-item-wrapp {
 			flex: 33%;
     		position: relative;
     		min-height: 488px;
     		transition: 0.3s;
     		margin-right: 20px;
+			@media screen and (max-width: 768px) {
+				flex: 100%;
+				width: 100%;
+				margin-bottom: 30px;
+			}
     		&:last-child {
     			margin-right: 0;
     		}
@@ -54,6 +67,10 @@
     		border-radius: 2px;
     		text-align: center;
     		background-color: #fff;
+			@media screen and (max-width: 768px) {
+				flex: 100%;
+				width: 100%;
+			}
     		img {
     			margin-bottom: 30px;
     		}

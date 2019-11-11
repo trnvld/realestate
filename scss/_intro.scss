@@ -9,12 +9,20 @@
 		align-items: center;
 		position: relative;
 		padding-bottom: 75px;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
+
 	&__info {
 		//flex: 40%;
 		width: 40%;
 		margin-right: 100px;
 		margin-bottom: 60px;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			margin-right: 0;
+		}
 		&-header {
 			font-weight: bold;
 			font-size: 36px;
@@ -37,6 +45,10 @@
 		width: 60%;
 		margin-right: -12%;
 		box-shadow: 0px 18px 40px rgba(130, 130, 130, 0.25);
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			margin-right: 0;
+		}
 	}
 	&__decor-text {
 		position: absolute;

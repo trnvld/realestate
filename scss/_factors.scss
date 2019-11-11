@@ -10,25 +10,43 @@
 		line-height: 49px;
 		color: #333333;
 		margin-bottom: 110px;
+		word-break: break-word;
+		@media screen and (max-width: 768px) {
+			font-size: 28px;
+			line-height: 40px;
+		}
 	}
 	&__info {
 		display: flex;
 		word-break: break-word;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
 		&-item {
 			flex: 33%;
 			margin-right: 25px;
+			@media screen and (max-width: 768px) {
+				margin-bottom: 30px;
+			}
 			&:last-child {
 				margin-right: 0;
 			}
 			&-img {
 				margin-bottom: 30px;
 				max-height: 75px;
+				@media screen and (max-width: 768px) {
+					width: 100%;
+				}
 			}
 			&-header {
 				font-weight: bold;
 				font-size: 18px;
 				line-height: 25px;
 				margin-bottom: 25px;
+				@media screen and (max-width: 768px) {
+					width: 100%;
+					text-align: center;
+				}
 			}
 			p {
 				font-weight: 300;

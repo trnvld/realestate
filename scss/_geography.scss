@@ -1,5 +1,8 @@
 .geography {
 	padding: 115px 0;
+	@media screen and (max-width: 600px) {
+		padding: 50px 0;
+	}
 	.container {
 
 	}
@@ -9,14 +12,33 @@
 		line-height: 49px;
 		color: #333333;
 		margin-bottom: 110px;
+		@media screen and (max-width: 768px) {
+			font-size: 28px;
+			line-height: 40px;
+			margin-bottom: 50px;
+			text-align: center;
+		}
 	}
 	&__projects {
 		display: flex;
 		margin-bottom: 115px;
+		@media screen and (max-width: 600px) {
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 50px;
+		}
 		&-item {
 			display: flex;
 			flex-direction: column;
 			margin-right: 25%;
+			@media screen and (max-width: 768px) {
+				margin-right: 50px;
+				margin-bottom: 30px;
+				align-items: center;
+			}
+			@media screen and (max-width: 600px) {
+				margin-right: 0;
+			}
 			&-header {
 				font-weight: bold;
 				font-size: 18px;
