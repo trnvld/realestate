@@ -73,7 +73,7 @@ function loginClick() {
     setTimeout(function () {
         $(target).css('visibility', 'visible');
         $(target).addClass('animated fadeInUp');
-        $('.login-btns #form-btn').css('border-color', '#FF4F1A')
+        $('.login-btns #form-btn').css('border-color', '#3FD3AD')
     }, 1000);
 };
 
@@ -87,12 +87,12 @@ function contactClick() {
     var errors = false;
     if (document.getElementById('form-name').value === '') {
         $('#form-name-label').text('Please enter your full name');
-        $('#form-name').css('border-bottom-color', '#FF4F1A');
+        $('#form-name').css('border-bottom-color', '#3FD3AD');
         errors = true;
     }
     if (document.getElementById('form-comp').value === '') {
         $('#form-comp-label').text('Please enter your company');
-        $('#form-comp').css('border-bottom-color', '#FF4F1A');
+        $('#form-comp').css('border-bottom-color', '#3FD3AD');
         errors = true;
     }
     if (document.getElementById('form-email').value === '') {
@@ -111,7 +111,7 @@ function contactClick() {
         errors = true;
     }
     if (errors) {
-        $('#form-btn-contact').css('border-color', '#FF4F1A');
+        $('#form-btn-contact').css('border-color', '#3FD3AD');
     }
     if (!errors) {
         $('#contactModal .wrapper').addClass('animated fadeOut');
