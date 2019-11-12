@@ -15,7 +15,6 @@
 </head>
 
 <body class="preloader-on">
-
     <div class="wrapper">
         <header class="header">
             <div class="header__container container">
@@ -23,7 +22,7 @@
                     <a href="/"><img src="img/svg/logo.svg" alt="logo"></a>
                 </div>
                 <ul class="header__menu menu">
-                    <li><a href="#about-us" class="selected link1 menu-link">О нас</a></li>
+                    <li><a href="#about-us" class="link1 menu-link">О нас</a></li>
                     <li><a href="#factors" class="link2 menu-link">Факторы</a></li>
                     <li><a href="#stage" class="link3 menu-link">Этапы</a></li>
                     <li><a href="#lifecycle" class="link4 menu-link">Технологии</a></li>
@@ -496,6 +495,17 @@
             });
 
 
+        });
+    </script>
+    <script>
+        function burger() {
+            $('.hamburger').click(function () {
+                $('.hamburger, .header__burger-menu').toggleClass('is-active')
+            })
+        };
+        
+        $(document).ready(function () {
+            burger();
         });
     </script>
 </body>
