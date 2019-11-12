@@ -1,7 +1,10 @@
 .potential {
 	padding: 100px 0;
 	@media screen and (max-width: 768px) {
-		padding: 0 0 100px 0;
+		padding: 50px 0;
+	}
+	@media screen and (max-width: 600px) {
+		padding: 30px 0;
 	}
 	.container {
 		display: flex;
@@ -45,10 +48,7 @@
 		box-shadow: 0px 18px 40px #828282;
 		margin-right: 100px;
 		@media screen and (max-width: 768px) {
-			width: 100%;
-			margin-left: 0;
-			margin-right: 0;
-			margin-bottom: 50px;
+			display: none;
 		}
 	}
 }

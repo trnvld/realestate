@@ -1,6 +1,12 @@
 .about-us {
 	background-color: #F2F2F2;
 	padding: 100px 0;
+	@media screen and (max-width: 768px) {
+		padding: 50px 0;
+	}
+	@media screen and (max-width: 600px) {
+		padding: 30px 0;
+	}
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -37,6 +43,9 @@
 		font-size: 18px;
 		line-height: 25px;
 		color: #333333;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 0;
+		}
 		p {
 			margin-bottom: 30px;
 		}
@@ -47,6 +56,11 @@
 		img {
 			width: 100%;
 		}
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+	&__arrow {
 		@media screen and (max-width: 768px) {
 			display: none;
 		}

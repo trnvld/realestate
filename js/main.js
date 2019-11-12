@@ -6,7 +6,7 @@ function menuOffset() {
             $('.header').removeClass('offset');
         }
     });
-}
+};
 
 function slideDownArrow() {
     $('.about-us__arrow').click(function () {
@@ -15,7 +15,7 @@ function slideDownArrow() {
         },
         'slow');
     });
-}
+};
 
 function anchorNav() {
     $(".menu").on("click",".menu-link", function (event) {
@@ -27,8 +27,9 @@ function anchorNav() {
         } else {
             $('body,html').animate({scrollTop: top}, 1500);
         }
+        $('.hamburger, .header__burger-menu').removeClass('is-active')
     });
-}
+};
 
 function revealText() {
     $('.reveal').click(function (event) {
@@ -37,32 +38,32 @@ function revealText() {
         $(this).css('display', 'none');
         $('.first-content').addClass('revealed');
     })
-}
+};
 
-function menuItemHighlight() {
-    $('.menu-link').click(function () {
-        if ($('.menu-link').hasClass('selected')) {
-            if ($('body,html').is(':animated')) {
-                return;
-            } else {
-                $('.menu-link').not(this).removeClass('selected');
-                if ($(this).hasClass('link1')) {
-                    $('.link1').addClass('selected')
-                } else if ($(this).hasClass('link2')) {
-                    $('.link2').addClass('selected')
-                } else if ($(this).hasClass('link3')) {
-                    $('.link3').addClass('selected')
-                } else if ($(this).hasClass('link4')) {
-                    $('.link4').addClass('selected')
-                } else if ($(this).hasClass('link5')) {
-                    $('.link5').addClass('selected')
-                } else if ($(this).hasClass('link6')) {
-                    $('.link6').addClass('selected')
-                }
-            }
-        }
-    });
-}
+// function menuItemHighlight() {
+//     $('.menu-link').click(function () {
+//         if ($('.menu-link').hasClass('selected')) {
+//             if ($('body,html').is(':animated')) {
+//                 return;
+//             } else {
+//                 $('.menu-link').not(this).removeClass('selected');
+//                 if ($(this).hasClass('link1')) {
+//                     $('.link1').addClass('selected')
+//                 } else if ($(this).hasClass('link2')) {
+//                     $('.link2').addClass('selected')
+//                 } else if ($(this).hasClass('link3')) {
+//                     $('.link3').addClass('selected')
+//                 } else if ($(this).hasClass('link4')) {
+//                     $('.link4').addClass('selected')
+//                 } else if ($(this).hasClass('link5')) {
+//                     $('.link5').addClass('selected')
+//                 } else if ($(this).hasClass('link6')) {
+//                     $('.link6').addClass('selected')
+//                 }
+//             }
+//         }
+//     });
+// }
 
 function loginClick() {
     var target = '.form-error-msg-wr-lg';
@@ -195,7 +196,7 @@ function forgotPasswordHandler() {
     $('.form-error-msg-wr-lg').css('display', 'none');
     $('.reset-pass-form').css('display', 'block');
     $('#loginModal .modal-login-heading').css('display', 'none');
-}
+};
 
 function forgotPasswordSendHandler() {
     $('.reset-pass-form-text').removeClass('animated fadeInUp');
@@ -212,7 +213,7 @@ function forgotPasswordSendHandler() {
         $('.reset-pass-form #form-btn').css('border-color', '#3FD3AD');
         $('.reset-pass-form .group input').css('border-bottom-color', '#3FD3AD');
     }, 1000);
-}
+};
 
 function forgotPasswordSendHandlerRu() {
     $('.reset-pass-form-text').removeClass('animated fadeInUp');
@@ -229,7 +230,7 @@ function forgotPasswordSendHandlerRu() {
         $('.reset-pass-form #form-btn').css('border-color', '#3FD3AD');
         $('.reset-pass-form .group input').css('border-bottom-color', '#3FD3AD');
     }, 1000);
-}
+};
 
 $(document).ready(function () {
     $("#login-modal-link").animatedModal({
@@ -265,9 +266,8 @@ $(document).ready(function () {
     });
 
     menuOffset();
-    burger();
     slideDownArrow();
-    menuItemHighlight();
+    // menuItemHighlight();
     anchorNav();
     revealText();
 });

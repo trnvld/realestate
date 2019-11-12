@@ -239,19 +239,15 @@
     transform: translate3d(0, 0, 0);
   }
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
+
+  50% {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
   }
 
-  20%,
-  40%,
-  60%,
-  80% {
+
+  25%,
+  75% {
     -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
   }
@@ -264,19 +260,15 @@
     transform: translate3d(0, 0, 0);
   }
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
+
+  40%,
+  80% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   20%,
-  40%,
-  60%,
-  80% {
+  60% {
     -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
   }

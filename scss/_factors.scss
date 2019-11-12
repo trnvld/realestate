@@ -1,6 +1,12 @@
 .factors {
 	background-color: #F2F2F2;
 	padding: 120px 0;
+	@media screen and (max-width: 768px) {
+		padding: 50px 0;
+	}
+	@media screen and (max-width: 600px) {
+		padding: 30px 0;
+	}
 	.container {
 
 	}
@@ -14,6 +20,7 @@
 		@media screen and (max-width: 768px) {
 			font-size: 28px;
 			line-height: 40px;
+			margin-bottom: 50px;
 		}
 	}
 	&__info {
