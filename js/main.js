@@ -265,16 +265,6 @@ $(document).ready(function () {
         animationDuration: '1.5s'
     });
 
-
-    if ($(window).width() < 768) {
-       $('#stage1, #stage2, #stage3').click(function() {
-            $(this).toggleClass('animate')
-       })
-    }
-    else {
-       alert('More than 960');
-    }
-
     menuOffset();
     slideDownArrow();
     // menuItemHighlight();
