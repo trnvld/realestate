@@ -35,6 +35,9 @@
 			&:last-child {
 				margin-right: 0;
 			}
+			.p-margin-top {
+				margin-top: 15px;
+			}
 			&-img {
 				margin-bottom: 30px;
 				max-height: 75px;
@@ -71,9 +74,7 @@
 					    position: absolute;
 					    left: 0;
 					}
-					p {
-						margin-top: 15px;
-					}
+					
 				}
 			}
 		}
