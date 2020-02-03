@@ -40,31 +40,6 @@ function revealText() {
     })
 };
 
-// function menuItemHighlight() {
-//     $('.menu-link').click(function () {
-//         if ($('.menu-link').hasClass('selected')) {
-//             if ($('body,html').is(':animated')) {
-//                 return;
-//             } else {
-//                 $('.menu-link').not(this).removeClass('selected');
-//                 if ($(this).hasClass('link1')) {
-//                     $('.link1').addClass('selected')
-//                 } else if ($(this).hasClass('link2')) {
-//                     $('.link2').addClass('selected')
-//                 } else if ($(this).hasClass('link3')) {
-//                     $('.link3').addClass('selected')
-//                 } else if ($(this).hasClass('link4')) {
-//                     $('.link4').addClass('selected')
-//                 } else if ($(this).hasClass('link5')) {
-//                     $('.link5').addClass('selected')
-//                 } else if ($(this).hasClass('link6')) {
-//                     $('.link6').addClass('selected')
-//                 }
-//             }
-//         }
-//     });
-// }
-
 function loginClick() {
     var target = '.form-error-msg-wr-lg';
     $(target).css('visibility', 'hidden');
@@ -75,12 +50,6 @@ function loginClick() {
         $(target).addClass('animated fadeInUp');
         $('.login-btns #form-btn').css('border-color', '#3FD3AD')
     }, 1000);
-};
-
-function burger() {
-    $('.hamburger').click(function () {
-        $('.hamburger, .header__burger-menu').toggleClass('is-active')
-    })
 };
 
 function contactClick() {
@@ -275,7 +244,6 @@ $(document).ready(function () {
 
     menuOffset();
     slideDownArrow();
-    // menuItemHighlight();
     anchorNav();
     revealText();
 });

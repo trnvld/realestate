@@ -94,7 +94,15 @@
       flex-direction: column;
       transition: 0.5s;
       z-index: 2;
-    }
+	}
+	.header__language {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		li {
+			position: relative;
+		}
+	}
     li {
       a {
         padding: 10px;

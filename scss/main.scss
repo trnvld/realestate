@@ -33,7 +33,10 @@ body {
 	height: 100%;
 	&.preloader-on {
 		overflow: hidden;
-	}
+  }
+  &.is-active {
+    overflow: hidden;
+  }
 }
 
 .wrapper {
@@ -251,6 +254,7 @@ textarea {
     .anim-modal input:focus ~ .bar:before {
       width: 100%; }
     .anim-modal input:-webkit-autofill {
+      box-shadow: 0 0 0px 1000px white inset;
       -webkit-box-shadow: 0 0 0px 1000px white inset;
       -webkit-text-fill-color: #060606 !important; }
   .anim-modal label {
