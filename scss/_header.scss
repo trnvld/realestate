@@ -95,10 +95,23 @@
       transition: 0.5s;
       z-index: 2;
 	}
+	.burger-lang {
+		margin-top: auto;
+		margin-bottom: 25px;
+	}
 	.header__language {
 		display: block;
 		width: 100%;
 		margin: 0 auto;
+		
+		.lang {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			a {
+				min-width: 45px;
+			}
+		}
 		li {
 			position: relative;
 		}
@@ -163,7 +176,6 @@
         font-size: 14px;
         line-height: 19px;
 		color: #2f3234;
-		font-weight: bold;
       }
       // &:hover, &.selected {
       // font-weight: bold;
