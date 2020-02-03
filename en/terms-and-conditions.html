@@ -219,6 +219,15 @@
 
 
     });
+    function burger() {
+            $('.hamburger').click(function () {
+                $('.hamburger, .header__burger-menu, body').toggleClass('is-active')
+            })
+        };
+
+        $(document).ready(function () {
+            burger();
+        });
 </script>
 </body>
 
