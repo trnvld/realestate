@@ -265,6 +265,14 @@ $(document).ready(function () {
         animationDuration: '1.5s'
     });
 
+    $(".contact-modal-link2").animatedModal({
+        color: 'rgb(6,6,6)',
+        modalTarget: 'contactModal',
+        animatedIn: 'fadeIn',
+        animatedOut: 'fadeOut',
+        animationDuration: '1.5s'
+    });
+
     menuOffset();
     slideDownArrow();
     // menuItemHighlight();
