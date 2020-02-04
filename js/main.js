@@ -141,12 +141,142 @@ function contactClick() {
         }, 1500);
     }
 };
+function contactClickEn() {
+    var errors = false;
+    let input = {
+        name: document.getElementById('form-name'),
+        company: document.getElementById('form-comp'),
+        email: document.getElementById('form-email'),
+        phone: document.getElementById('form-phone'),
+        country: document.getElementById('form-country'),
+    };
+    let regexp = {
+        email: /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/,
+        phone: /^\d+$/
+    };
+    if (input.name.value === '') {
+        $('#form-name-label').text('Please enter your full name');
+        $('#form-name').css('border-bottom-color', '#red');
+        errors = true;
+    } else {
+        $('#form-name-label').text('Correct!');
+        $('#form-name').css('border-bottom-color', '#3FD3AD');
+    }
+    if (input.company.value === '') {
+        $('#form-comp-label').text('Please enter your company');
+        $('#form-comp').css('border-bottom-color', '#red');
+        errors = true;
+    } else {
+        $('#form-comp-label').text('Correct!');
+        $('#form-comp').css('border-bottom-color', '#3FD3AD');
+    }
+
+    if (input.email.value === '') {
+        $('#form-email-label').text('Please enter your email');
+        $('#form-email').css('border-bottom-color', '#red');
+        errors = true;
+    } else if (!regexp.email.test(input.email.value)) {
+        $('#form-email-label').text('Please enter correct email');
+        $('#form-email').css('border-bottom-color', '#red');
+        errors = true;
+    } else {
+        $('#form-email-label').text('Correct!');
+        $('#form-email').css('border-bottom-color', '#3FD3AD');
+    }
+
+    if (input.phone.value === '') {
+        $('#form-phone-label').text('Please enter your phone');
+        $('#form-phone').css('border-bottom-color', '#red');
+        errors = true;
+    } else if (!regexp.phone.test(input.phone.value)) {
+        $('#form-phone-label').text('Please enter correct phone (only nubmers)');
+        $('#form-phone').css('border-bottom-color', '#red');
+        errors = true;
+    } else {
+        $('#form-phone-label').text('Correct!');
+        $('#form-phone').css('border-bottom-color', '#3FD3AD');
+    }
+    if (input.country.value === '') {
+        $('#form-country-label').text('Please enter your country');
+        $('#form-country').css('border-bottom-color', '#red');
+        errors = true;
+    } else {
+        $('#form-country-label').text('Correct!');
+        $('#form-country').css('border-bottom-color', '#3FD3AD');
+    }
+    if (errors) {
+        $('#form-btn-contact').css('border-color', '#red');
+    }
+    if (!errors) {
+        $('#contactModal .wrapper').addClass('animated fadeOut');
+        $('#contactModal .modal-login-heading').addClass('animated fadeOut');
+
+        var target = '.form-contact-msg';
+        $(target).css('visibility', 'hidden');
+        $('#form-btn-contact').css('display', 'none');
+        $(target).removeClass('animated');
+        $(target).removeClass('fadeInUp');
+        setTimeout(function() {
+            $('#contactModal .wrapper').css('display', 'none');
+            $('#contactModal .modal-login-heading').css('display', 'none');
+            $(target).css('visibility', 'visible');
+            $(target).addClass('animated fadeInUp');
+            $.ajax({
+                type: "POST",
+                url: "../php/handlers/ContactFormHandler.php",
+                data: $('#contact_form').serialize(),
+            });
+        }, 1500);
+    }
+};
+function subscribeFormEn() {
+    let submitButton = document.querySelectorAll('.footer-subscribe-form-btn-en')[0];
+    let subscribeForm = document.querySelectorAll('form.footer-subscribe-form-en')[0];
+    let subscribeInput = subscribeForm.childNodes[1];
+    let regexp = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    let errors = false;
+    let thankNode = document.createElement("p");
+    thankNode.classList.add('footer-subscribe-thankyou');
+
+    submitButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (subscribeInput.value === '') {
+            thankNode.innerHTML = 'Please enter your email';
+            thankNode.classList.add('footer-subscribe-wrong');
+            subscribeForm.append(thankNode);
+            errors = true;
+        } else if (!regexp.test(subscribeInput.value)) {
+            thankNode.innerHTML = 'Please enter correct email';
+            thankNode.classList.add('footer-subscribe-wrong');
+            subscribeForm.append(thankNode);
+            errors = true;
+        } else {
+            thankNode.classList.remove('footer-subscribe-wrong');
+            thankNode.innerHTML = '';
+            errors = false;
+        }
+
+        if (!errors) {
+            $.ajax({
+                type: "POST",
+                url: "../php/handlers/SubscribeHandler.php",
+                data: $('form.footer-subscribe-form-en').serialize(),
+                success: function () {
+                    thankNode.innerHTML = 'Thanks for subscribing!';
+                    subscribeForm.append(thankNode);
+                    subscribeInput.value = '';
+                }
+            });
+        }
+
+    });
+}
 
 
-function subscribeForm() {
+function subscribeFormRu() {
 
-    let submitButton = document.querySelectorAll('.footer-subscribe-form-btn')[0];
-    let subscribeForm = document.querySelectorAll('form.footer-subscribe-form')[0];
+    let submitButton = document.querySelectorAll('.footer-subscribe-form-btn-ru')[0];
+    let subscribeForm = document.querySelectorAll('form.footer-subscribe-form-ru')[0];
     let subscribeInput = subscribeForm.childNodes[1];
     let regexp = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     let errors = false;
@@ -174,7 +304,7 @@ function subscribeForm() {
             $.ajax({
                 type: "POST",
                 url: "php/handlers/SubscribeHandler.php",
-                data: $('form.footer-subscribe-form').serialize(),
+                data: $('form.footer-subscribe-form-ru').serialize(),
                 success: function () {
                     thankNode.innerHTML = 'Спасибо за подписку!';
                     subscribeForm.append(thankNode);
@@ -326,5 +456,9 @@ $(document).ready(function () {
     slideDownArrow();
     anchorNav();
     revealText();
-    subscribeForm();
+    if (window.location.href.indexOf('/en/') !== -1) {
+        subscribeFormEn();
+    } else {
+        subscribeFormRu();
+    }
 });

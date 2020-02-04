@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
 </head>
 
@@ -125,11 +126,11 @@
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer-subscribe">
-                <span class="footer-subscribe-text">Subscribe to our newsletter to receive exclusive information
-                    <br>about us and our services</span>
-                <form action="/" class="footer-subscribe-form">
-                    <input type="email" placeholder="Enter your e-mail" class="footer-subscribe-form-email">
-                    <input type="submit" value="" class="footer-subscribe-form-btn">
+                    <span class="footer-subscribe-text">Subscribe to our newsletter to receive exclusive information
+                        <br>about us and our services</span>
+                <form action="/" class="footer-subscribe-form footer-subscribe-form-en">
+                    <input type="email" placeholder="Enter your e-mail" class="footer-subscribe-form-email" name="email">
+                    <input type="submit" value="" class="footer-subscribe-form-btn footer-subscribe-form-btn-en">
                 </form>
             </div>
             <div class="footer-menus">
@@ -196,7 +197,7 @@
     </footer>
 </div>
 
-
+<script src="../js/animatedModal.min.js"></script>
 <div id="toTop">
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="24" cy="24" r="23.5" transform="rotate(-90 24 24)"/>
