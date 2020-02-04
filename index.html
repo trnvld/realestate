@@ -332,9 +332,9 @@
                 <div class="footer-subscribe">
                     <span class="footer-subscribe-text">Подписывайтесь на нашу рассылку,<br>и получайте свежие новости
                         из мира инвестиций</span>
-                    <form action="/" class="footer-subscribe-form">
-                        <input type="email" placeholder="Введите свой E-MAIL" class="footer-subscribe-form-email">
-                        <input type="submit" value="" class="footer-subscribe-form-btn">
+                    <form action="/" class="footer-subscribe-form footer-subscribe-form-ru">
+                        <input type="email" placeholder="Введите свой E-MAIL" class="footer-subscribe-form-email" name="email">
+                        <input type="submit" value="" class="footer-subscribe-form-btn footer-subscribe-form-btn-ru">
                     </form>
                 </div>
                 <div class="footer-menus">
@@ -467,7 +467,7 @@
             <div class="modal-content-center">
                 <span class="modal-login-heading">Свяжитесь с нами</span>
                 <div class="wrapper">
-                    <form>
+                    <form id="contact_form">
                         <div class="group">
                             <input id="form-name" type="text" required="required" name="name" maxlength="50">
                             <span class="highlight"></span>
@@ -498,7 +498,7 @@
                             <span class="bar"></span>
                             <label id="form-country-label">Страна</label>
                         </div>
-                        <a id="form-btn-contact" onclick="contactClickRu()" type="button">
+                        <a id="form-btn-contact" onclick="contactClick()" type="button">
                             Отправить
                         </a>
                     </form>
